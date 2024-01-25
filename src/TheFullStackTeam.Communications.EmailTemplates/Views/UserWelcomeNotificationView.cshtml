@@ -1,0 +1,31 @@
+﻿@using TheFullStackTeam.Communications.EmailTemplates.Localization
+@model TheFullStackTeam.Communications.EmailTemplates.ViewModels.UserWelcomeNotificationViewModel
+@inject LocalizationService _templateLocalize
+
+@{
+    ViewBag.Title = _templateLocalize.GetLocalizedHtmlString("WELCOME_TO_TFST");
+    Layout = "~/Views/Shared/_MailTemplateLayout.cshtml";
+}
+<div>
+    <h1>@_templateLocalize.GetLocalizedHtmlString("WELCOME_TO_TFST")</h1>
+
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString("HI_THERE") @Model.FirstName,
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString("WELCOME_TO_TFST_P_1")
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString("WELCOME_TO_TFST_P_2")
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString("WELCOME_TO_TFST_P_3")
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString("WELCOME_TO_TFST_P_4")
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString("CHEERS")
+    </p>
+    <p>@_templateLocalize.GetLocalizedHtmlString("ADMIN_TFST")</p>
+</div>

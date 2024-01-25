@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Professionals\Validators\**" />
+    <EmbeddedResource Remove="Professionals\Validators\**" />
+    <None Remove="Professionals\Validators\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Search\Handler\SearchOrganizationServiceByParametersQueryHandler.cs" />
+    <Compile Remove="Search\Queries\SearchOrganizationServiceParametersQuery.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="packages.lock.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="11.0.0" />
+    <PackageReference Include="itext7" Version="7.2.5" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.6" />
+    <PackageReference Include="Microsoft.Graph" Version="4.54.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="SimpleMvcSitemap.Core" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TheFullStackTeam.Application.Model\TheFullStackTeam.Application.Model.csproj" />
+    <ProjectReference Include="..\TheFullStackTeam.Application.Services.Abstract\TheFullStackTeam.Application.Services.Abstract.csproj" />
+    <ProjectReference Include="..\TheFullStackTeam.Application.Services\TheFullStackTeam.Application.Services.csproj" />
+    <ProjectReference Include="..\TheFullStackTeam.Communications.Abstract\TheFullStackTeam.Communications.Abstract.csproj" />
+    <ProjectReference Include="..\TheFullStackTeam.CvPdfGenerator\TheFullStackTeam.CvPdfGenerator.csproj" />
+    <ProjectReference Include="..\TheFullStackTeam.Persistence\TheFullStackTeam.Persistence.csproj" />
+  </ItemGroup>
+
+</Project>

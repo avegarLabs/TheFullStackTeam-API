@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+		<DocumentationFile></DocumentationFile>
+	</PropertyGroup>
+
+	<PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+		<DocumentationFile>bin\Release\net6.0\TheFullStackTeam.API.xml</DocumentationFile>
+	</PropertyGroup>
+	
+	<PropertyGroup>
+		<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+		<ApplicationInsightsResourceId>/subscriptions/985e48a1-1dc8-4c0d-b790-4e8c25b3572b/resourceGroups/TheFullStackTeam_DEV/providers/microsoft.insights/components/tfst-dev-application-inisgights</ApplicationInsightsResourceId>
+		<UserSecretsId>2813de1a-8e5b-4e8c-8a9f-65a40802651c</UserSecretsId>
+	</PropertyGroup>
+	
+	<ItemGroup>
+	  <Compile Remove="Controllers\UserProfiles\**" />
+	  <Content Remove="Controllers\UserProfiles\**" />
+	  <EmbeddedResource Remove="Controllers\UserProfiles\**" />
+	  <None Remove="Controllers\UserProfiles\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+	  <Content Remove="packages.lock.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="FluentValidation" Version="11.0.0" />
+		<PackageReference Include="FluentValidation.AspNetCore" Version="11.0.0" />
+		<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
+		<PackageReference Include="Microsoft.ApplicationInsights.DependencyCollector" Version="2.21.0" />
+		<PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.21.0" />
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Graph" Version="4.54.0" />
+		<PackageReference Include="Microsoft.Identity.Web" Version="1.24.1" />
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.6" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TheFullStackTeam.Application.Model\TheFullStackTeam.Application.Model.csproj" />
+		<ProjectReference Include="..\TheFullStackTeam.Application.Services\TheFullStackTeam.Application.Services.csproj" />
+		<ProjectReference Include="..\TheFullStackTeam.Application\TheFullStackTeam.Application.csproj" />
+		<ProjectReference Include="..\TheFullStackTeam.Communications\TheFullStackTeam.Communications.csproj" />
+		<ProjectReference Include="..\TheFullStackTeam.Persistence\TheFullStackTeam.Persistence.csproj" />
+		<ProjectReference Include="..\TheFullStackTeam.RolesMemoryCache\TheFullStackTeam.RolesMemoryCache.csproj" />
+	</ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1development_1json__JsonSchema="https://jenkins-x.io/schemas/jx-requirements.json" /></VisualStudio></ProjectExtensions>
+
+</Project>

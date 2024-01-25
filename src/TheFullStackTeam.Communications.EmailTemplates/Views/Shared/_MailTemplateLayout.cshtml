@@ -1,0 +1,252 @@
+﻿@using TheFullStackTeam.Communications.EmailTemplates.Localization
+@inject LocalizationService TemplateLocalizer
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <style type="text/css">
+        /* FONTS */
+        @@media screen {
+            @@font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+            }
+
+            @@font-face {
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 700;
+                src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+            }
+
+            @@font-face {
+                font-family: 'Montserrat';
+                font-style: italic;
+                font-weight: 400;
+                src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+            }
+
+            @@font-face {
+                font-family: 'Montserrat';
+                font-style: italic;
+                font-weight: 700;
+                src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+            }
+        }
+        /* CLIENT-SPECIFIC STYLES */
+        body, table, td, a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        ul {
+            background: #15ABFF;
+            padding: 20px;
+            border: 1px solid #24544E;
+            border-radius: 10px;
+            list-style-type: none;
+        }
+
+        li {
+            color: white;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+            li .alt {
+                color: white;
+                background: #15ABFF;
+            }
+
+        .calendar-link img {
+            height: 32px !important;
+        }
+
+        .calendar-link  {
+            font-size: 14px;
+        }
+       
+        .details-table-row {
+            width: 100%;
+            background-color: #fff
+        }
+
+        .details-table-row-alt {
+            width: 100%;
+            background-color: #f2f2f2
+        }
+
+        .details-table-col-left {
+            font-weight: 600;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 0.34px;
+            color: #2c2c2c;
+            padding-left: 16px;
+            padding-right: 16px
+        }
+
+        .details-tale-col-right {
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 0.2px;
+            text-align: right;
+            color: #242f33;
+            padding-left: 16px;
+            padding-right: 16px
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+       img, .logo-header{
+            max-width: 100px;
+            max-height: 100px;
+            display: block;
+            margin-bottom:15px;
+        }
+        img, .logo-footer{
+            max-width: 100px;
+            max-height: 100px;
+            display: block;
+            margin-bottom:15px;
+        }
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+        /* MOBILE STYLES */
+        @@media screen and (max-width:600px) {
+            h1 {
+                font-size: 32px !important;
+                line-height: 32px !important;
+            }
+        }
+        /* ANDROID CENTER FIX */
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+    </style>
+</head>
+<body style="background-color: #FFF; margin: 0 !important; padding: 0 !important;">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <!-- LOGO -->
+    <tr>
+        <td style="background-color: #FFF; " align="center">
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 200px;">
+                <tr>
+                    <td align="center" valign="middle">
+                        <a href="https://thefullstackteam.com" target="_blank">
+                                <img alt="Logo" src="https://tfststorage.blob.core.windows.net/common/tfst-icon.png" height="75" width="75" style="display: block; max-height: 100px; max-width: 100px;">
+                            </a>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td bgcolor="#FFF" align="center" style="padding: 0px 10px 0px 10px;">
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                <!-- CONTENT -->
+                <tr>
+                    <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: Montserrat, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 400; line-height: 25px;">
+                        @RenderBody()
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="center" valign="middle" style="padding: 20px 30px 40px 30px;">
+                        <a href="https://thefullstackteam.com" target="_blank">
+                                <img alt="Logo" height="150" src="https://tfststorage.blob.core.windows.net/common/tfst-logo-h.svg" style="display: block; max-height: 100px; max-width: 100px;">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+    <!-- FOOTER -->
+    <tr>
+        <td bgcolor="#FFF" align="center" style="padding: 0px 10px 0px 10px;">
+
+            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                <tr>
+                    <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 0px 30px; color: #333; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 400; line-height: 18px;">
+                        <p style="margin: 0; font-size: smaller">
+                            @TemplateLocalizer.GetLocalizedHtmlString("RESPECTS_PRIVACY")
+                            @TemplateLocalizer.GetLocalizedHtmlString("TO_LEARN_MORE_READ_OUR")
+                            <a href="https://thefullstackteam.com/privacy-policy" target="_blank" style="color: #15ABFF; font-weight: 700;">
+                                @TemplateLocalizer.GetLocalizedHtmlString("PRIVACY_POLICY")
+                            </a>
+                            @TemplateLocalizer.GetLocalizedHtmlString("AND_OUR")
+                            <a href="https://thefullstackteam.com/terms-of-service" target="_blank" style="color: #15ABFF; font-weight: 700;">
+                                @TemplateLocalizer.GetLocalizedHtmlString("TERMS_AND_CONDITIONS")
+                            </a>.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 0px 30px; color: #333; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 400; line-height: 18px;">
+                        <p style="margin: 0; font-size: smaller">
+                            @TemplateLocalizer.GetLocalizedHtmlString("UNSUBSCRIBE_PREV")
+                            <a href="https://app.thefullstackteam.com/unsubscribe" target="_blank" style="color: #15ABFF; font-weight: 700;">
+                                @TemplateLocalizer.GetLocalizedHtmlString("UNSUBSCRIBE")
+                            </a>.
+                        </p>
+                    </td>
+                </tr>
+                <!-- ADDRESS -->
+                <tr>
+                    <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; color: #333; font-family: 'Montserrat', Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 400; line-height: 18px;">
+                        <p style="margin: 0; font-size: smaller">
+                            <a href="https://thefullstackteam.com/" target="_blank" style="color: #15ABFF; font-weight: 700;">
+                                The Full Stack Team
+                            </a>, 28860, Madrid, España
+                        </p>
+                    </td>
+                </tr>
+            </table>
+
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>

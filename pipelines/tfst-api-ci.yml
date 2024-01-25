@@ -1,0 +1,60 @@
+# TFST API CI pipeline
+# It only builds the API and executes unit tests 
+# PIPELINE MUST BE TRIGGERED MANUALLY OR AS A PR POLICY
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  value: '**/*[Tt]ests/*.csproj'
+  NUGET_PACKAGES: $(Pipeline.Workspace)/.nuget/packages
+
+steps:
+
+- task: NuGetToolInstaller@1
+  displayName: 'NuGet tool installer'
+
+#- task: Cache@2
+#  displayName: 'NuGet Cache'
+#  inputs:
+#    key: 'nuget | "$(Agent.OS)" | **/packages.lock.json,!**/bin/**,!**/obj/**'
+#    restoreKeys: |
+#       nuget | "$(Agent.OS)"
+#       nuget
+#    path: '$(NUGET_PACKAGES)'
+#    cacheHitVar: 'API_CACHE_RESTORED'
+
+- task: DotNetCoreCLI@2
+  displayName: Restore
+  # condition: ne(variables.API_CACHE_RESTORED, true)
+  inputs:
+    command: restore
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  displayName: 'Build'
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+
+- task: VSTest@2
+  displayName: 'Unit Tests'
+  inputs:
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
+    testSelector: 'testAssemblies'
+    testAssemblyVer2: |
+      **\*test.dll
+      **\DataPlatform.DataApi.Tests.dll
+      **\Marelli.CableDataUploader.Service.Tests.dll
+      !**\*TestAdapter.dll
+      !**\obj\**
+      !**\testhost.dll
+      !*testhost.dll
+    searchFolder: '$(System.DefaultWorkingDirectory)'
+    diagnosticsEnabled: true
+    codeCoverageEnabled: true

@@ -1,0 +1,11 @@
+﻿@using TheFullStackTeam.Communications.EmailTemplates.Localization
+@model TheFullStackTeam.Communications.EmailTemplates.ViewModels.VerifyAccountViewModel
+@inject LocalizationService _templateLocalized
+@{
+    ViewBag.Title = _templateLocalized.GetLocalizedHtmlString("ADMIN_NOTIFICATION");
+    Layout = "~/Views/Shared/_MailTemplateLayout.cshtml";
+}
+<div>
+    <h1>@_templateLocalized.GetLocalizedHtmlString("MESSAGE");</h1>
+    @Model.Message;
+</div>

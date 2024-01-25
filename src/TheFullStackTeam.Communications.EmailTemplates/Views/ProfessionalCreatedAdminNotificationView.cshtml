@@ -1,0 +1,29 @@
+﻿@using TheFullStackTeam.Communications.EmailTemplates.Localization
+@model TheFullStackTeam.Communications.EmailTemplates.ViewModels.ProfessionalCreatedNotificationViewModel
+@inject LocalizationService _templateLocalize
+
+@{
+    ViewBag.Title = _templateLocalize.GetLocalizedHtmlString("ADMIN_NOTIFICATION");
+    Layout = "~/Views/Shared/_MailTemplateLayout.cshtml";
+}
+<div>
+    <h1>@_templateLocalize.GetLocalizedHtmlString("MESSAGE")</h1>
+    <p>New Partner profile has been just created by @Model.FirstName @Model.LastName (@Model.Email).</p>
+    <ul>
+        <li>
+            <b>MONIKER:</b>@Model.Moniker
+        </li>
+        <li>
+            <b>FIRST NAME:</b>@Model.FirstName
+        </li>
+        <li>
+            <b>LAST NAME:</b>@Model.LastName
+        </li>
+        <li>
+            <b>DISPLAY NAME:</b>@Model.DisplayName
+        </li>
+        <li>
+            <b>MOTO:</b>@Model.Moto
+        </li>
+    </ul>
+</div>

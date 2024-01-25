@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="metadata">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" />
+							</xsd:sequence>
+							<xsd:attribute name="name" use="required" type="xsd:string" />
+							<xsd:attribute name="type" type="xsd:string" />
+							<xsd:attribute name="mimetype" type="xsd:string" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="assembly">
+						<xsd:complexType>
+							<xsd:attribute name="alias" type="xsd:string" />
+							<xsd:attribute name="name" type="xsd:string" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+							<xsd:attribute ref="xml:space" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>2.0</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<data name="SERVICE_NAME" xml:space="preserve">
+    <value>Nombre de actividad</value>
+  </data>
+	<data name="ADMIN_NOTIFICATION" xml:space="preserve">
+    <value>Notificación para el Administrador</value>
+  </data>
+	<data name="AND_OUR" xml:space="preserve">
+    <value>y nuestros</value>
+  </data>
+	<data name="AUTHOR" xml:space="preserve">
+    <value>Autor</value>
+  </data>
+	<data name="BEFORE" xml:space="preserve">
+    <value>antes</value>
+  </data>
+	<data name="BILLING" xml:space="preserve">
+    <value>Facturación</value>
+  </data>
+	<data name="CANCELATION_DEADLINE" xml:space="preserve">
+    <value>Fecha Límite de cancelación</value>
+  </data>
+	<data name="CANCELLATION_POLICY" xml:space="preserve">
+    <value>Política de cancelación</value>
+  </data>
+	<data name="CHEERS" xml:space="preserve">
+    <value>Saludos, </value>
+  </data>
+	<data name="CUSTOMER" xml:space="preserve">
+    <value>Cliente</value>
+  </data>
+	<data name="DATE" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+	<data name="DAY" xml:space="preserve">
+    <value>día</value>
+  </data>
+	<data name="DAYS" xml:space="preserve">
+    <value>días</value>
+  </data>
+	<data name="DEADLINE" xml:space="preserve">
+    <value>Fecha límite</value>
+  </data>
+	<data name="EMAIL" xml:space="preserve">
+    <value>Email</value>
+  </data>
+	<data name="FROM" xml:space="preserve">
+    <value>Desde</value>
+  </data>
+	<data name="HELP" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+	<data name="HI_THERE" xml:space="preserve">
+    <value>Hola,</value>
+  </data>
+	<data name="HOW_MANY" xml:space="preserve">
+    <value>Cuántos</value>
+  </data>
+	<data name="LEAVE_ASSESSMENT" xml:space="preserve">
+    <value>Dejar mi valoración</value>
+  </data>
+	<data name="TFST_NOTIFICATION" xml:space="preserve">
+    <value>NOTIFICACIÓN DE TFST</value>
+  </data>
+	<data name="MANAGE_BOOKINGS" xml:space="preserve">
+    <value>Gestionar Reservas</value>
+  </data>
+	<data name="MESSAGE" xml:space="preserve">
+    <value>Mensaje: </value>
+  </data>
+	<data name="NEW_BOOKING_DESCRIPTION" xml:space="preserve">
+    <value>Una nueva reserva acaba de ser creada. Estos son los detalles.</value>
+  </data>
+	<data name="NEW_BOOKING_TITLE" xml:space="preserve">
+    <value>Nueva Reserva</value>
+  </data>
+	<data name="NOTIFICATION_TITLE" xml:space="preserve">
+    <value>Notificación</value>
+  </data>
+	<data name=" PROFESSIONAL_WELCOME_EMAIL_TITLE" xml:space="preserve">
+    <value>Alta en The Full Stack Team Pro</value>
+  </data>
+	<data name="PEOPLE" xml:space="preserve">
+    <value>personas</value>
+  </data>
+	<data name="PERSON" xml:space="preserve">
+    <value>persona</value>
+  </data>
+	<data name="PRIVACY_POLICY" xml:space="preserve">
+    <value>Política de Privacidad</value>
+  </data>
+	<data name="PROFILE" xml:space="preserve">
+    <value>Perfil</value>
+  </data>
+	<data name="RATE_OUR_SERVICES_TITLE" xml:space="preserve">
+    <value>Valore nuestros servicios</value>
+  </data>
+	<data name="REFUND_WILL_BE" xml:space="preserve">
+    <value>el reembolso será del </value>
+  </data>
+	<data name="BOOKING_ACCEPTEDLE" xml:space="preserve">
+    <value>Reserva aceptada</value>
+  </data>
+	<data name="BOOKING_ACCEPTED_DESCRIPTION" xml:space="preserve">
+    <value>Tu reserva ha sido aceptada y sólamente nos queda recibir el pago. Aquí tiene los detalles de la reserva. Por favor pulsa el botón "Revisar y Pagar" para formalizar el pago.</value>
+  </data>
+	<data name="BOOKING_CREATION_DATE" xml:space="preserve">
+    <value>Fecha de creación de la reserva</value>
+  </data>
+	<data name="BOOKING_DATE" xml:space="preserve">
+    <value>Fecha de la reserva</value>
+  </data>
+	<data name="BOOKING_DETAILS" xml:space="preserve">
+    <value>Detalles de la reserva</value>
+  </data>
+	<data name="BOOKING_LOCATOR" xml:space="preserve">
+    <value>Localizador de la reserva</value>
+  </data>
+	<data name="BOOKING_REJECTED_CUSTOMER_NOTIFICATION_TITLE" xml:space="preserve">
+    <value>Tu reserva ha sido rechazada</value>
+  </data>
+	<data name="BOOKING_STATUS" xml:space="preserve">
+    <value>Estado de la Reserva</value>
+  </data>
+	<data name="BOOKING_UPDATED_DESCRIPTION" xml:space="preserve">
+    <value>La reserva o su estado acaban de ser actualiuzados, este es el estado actual.</value>
+  </data>
+	<data name="BOOKING_UPDATED_TITLE" xml:space="preserve">
+    <value>Reserva Actualizada</value>
+  </data>
+	<data name="RESPECTS_PRIVACY" xml:space="preserve">
+    <value>The Full Stack Team respeta su privacidad.</value>
+  </data>
+	<data name="REVIEW_ACTIVITY_MESSAGE" xml:space="preserve">
+    <value>Nos importa su opinión ¡ dejenos su valoración del servicio!</value>
+  </data>
+	<data name="REVIEW_ACTIVITY_MESSAGE_ATTEMPT" xml:space="preserve">
+    <value>Si no desea enviarnos su valoración elimine este correo.</value>
+  </data>
+	<data name="REVIEW_AND_PAY" xml:space="preserve">
+    <value>Revisar y Pagar</value>
+  </data>
+	<data name="SENDER_EMAIL_DISPLAYNAME" xml:space="preserve">
+    <value>The Full Stack Team</value>
+  </data>
+	<data name="TERMS_AND_CONDITIONS" xml:space="preserve">
+    <value>Términos and Condiciones</value>
+  </data>
+	<data name="TO" xml:space="preserve">
+    <value>hasta</value>
+  </data>
+	<data name="TO_LEARN_MORE_READ_OUR" xml:space="preserve">
+    <value>Para saber más, por favor lea nuestra</value>
+  </data>
+	<data name="UNSUBSCRIBE" xml:space="preserve">
+    <value>darse de baja</value>
+  </data>
+	<data name="UNSUBSCRIBE_PREV" xml:space="preserve">
+    <value>Si estos correos le parecen molestos, por favor, no dude en </value>
+  </data>
+	<data name="UP_TO" xml:space="preserve">
+    <value>hasta</value>
+  </data>
+	<data name="VERIFY_EMAIL_ADDRESS" xml:space="preserve">
+    <value>Verifica Tu Correo Electrónico</value>
+  </data>
+	<data name="VERIFY_EMAIL_DESCRIPTION" xml:space="preserve">
+    <value>Por favor haz click en el botón inferior para completar el proceso de verificación de tu cuenta de correo:</value>
+  </data>
+	<data name="VERIFY_EMAIL_DIDNT_ATTEMPT" xml:space="preserve">
+    <value>Si no te has inscrito en nuestra página o crees que no es momento de verificar tu dirección de correo electrónico, elimina este correo electrónico.</value>
+  </data>
+	<data name="VERIFY_EMAIL_TITLE" xml:space="preserve">
+    <value>Verifica tu email</value>
+  </data>
+	<data name="VERIFY_SECURITY_CODE" xml:space="preserve">
+    <value>Verifica el código de seguridad</value>
+  </data>
+	<data name="VIEW_REVIEW" xml:space="preserve">
+    <value>Ver valoración</value>
+  </data>
+	<data name="WELCOME_TO_TFST" xml:space="preserve">
+    <value>Bienvenido A The Full Stack Team</value>
+  </data>
+	<data name="WELCOME_TO_TFST_P_1" xml:space="preserve">
+    <value>¡Bienvenido/a a nuestro Talent Hub! Nos complace que te hayas unido a nuestra comunidad de freelancers y profesionales de la tecnología, donde puedes exhibir tus habilidades y servicios y conectarte con empresas que buscan talento.</value>
+  </data>
+	<data name="WELCOME_TO_TFST_P_2" xml:space="preserve">
+    <value>En nuestra plataforma, encontrarás oportunidades emocionantes para desarrollar tu carrera y alcanzar tus objetivos profesionales. Sabemos que eres un profesional altamente capacitado y esperamos que encuentres experiencias increíbles que te permitan crecer aún más.</value>
+  </data>
+	<data name="WELCOME_TO_TFST_P_3" xml:space="preserve">
+    <value>Nuestro equipo está aquí para ayudarte en cada paso del camino. Si tienes alguna pregunta o necesitas ayuda, no dudes en comunicarte con nuestro equipo de soporte.Sabemos que eres un profesional altamente capacitado y esperamos que encuentres experiencias increíbles que te permitan crecer aún más.</value>
+  </data>
+	<data name="WELCOME_TO_TFST_P_4" xml:space="preserve">
+    <value>Gracias por unirte a nuestra comunidad. Esperamos verte pronto en nuestra plataforma.</value>
+  </data>
+	<data name="YOU_RECEIVE_NEW_REVIEW" xml:space="preserve">
+    <value>Ha recibido una nueva valoración</value>
+  </data>
+	<data name="YOU_RECEIVE_NEW_REVIEW_MESSAGE" xml:space="preserve">
+    <value>Ha recibido una nueva valoración de actividad de un usuario</value>
+  </data>
+	<data name="BOOKING_REJECTED_DESCRIPTION" xml:space="preserve">
+    <value>Por algún motivo tu reserva ha sido rechazada, esperamos que nuestro socio te haya dejado más información.</value>
+  </data>
+	<data name="WROTE" xml:space="preserve">
+    <value>escribió:</value>
+  </data>
+	<data name="NEW_BOOKING_CUSTOMER_DESCRIPTION" xml:space="preserve">
+    <value>Acabas de crear una reserva, durante los próximos días recibirás un email confirmándote que nuestro socio ha aceptado la reserva y con un enlace para realizar el pago de forma sencilla.</value>
+  </data>
+	<data name="THANKS_FOR_TRUSTIING_US" xml:space="preserve">
+    <value>Gracias por confiar en nosotros.</value>
+  </data>
+	<data name="BOOKING_CANCELLED" xml:space="preserve">
+    <value>ATENCIÓN: reserva cancelada!</value>
+  </data>
+	<data name="USER_REGISTERED" xml:space="preserve">
+    <value>Usuario Registrado</value>
+  </data>
+	<data name="VERIFY_YOUR_ACCOUNT" xml:space="preserve">
+    <value>Verifica tu cuenta</value>
+  </data>
+	<data name="GO TO VALIDATION PROCESS" xml:space="preserve">
+    <value>Ir al proceso de validación</value>
+  </data>
+	<data name="CERTIFICATION_CREATED" xml:space="preserve">
+    <value>Se ha creado una certificación</value>
+  </data>
+	<data name="FORGOT_PASSWORD" xml:space="preserve">
+    <value>Ir a reestablecer la contraseña</value>
+  </data>
+	<data name="FORGOT_PASSWORD_DESCRIPTION" xml:space="preserve">
+    <value>¿Has olvidado tu contraseña? Podrás reiniciarla utilizando el siguiente enlace.</value>
+  </data>
+	<data name="FORGOT_PASSWORD_TITLE" xml:space="preserve">
+    <value>Reiniciar contraseña</value>
+  </data>
+	<data name="ADMIN_TFST" xml:space="preserve">
+    <value>The Full Stack Team</value>
+  </data>
+	<data name="DEAR_USER" xml:space="preserve">
+    <value>No somos nada sin aventureros como tu y esperamos que con nosotros puedas encontrar y vivir experiencias inolvidables. ¡Bienvenido a The Full Stack Team!</value>
+  </data>
+	<data name="IMPORTANT" xml:space="preserve">
+    <value>IMPORTANTE!</value>
+  </data>
+	<data name="REMEMBER_GET_READY_FOR_PAYMENTS" xml:space="preserve">
+    <value>Nos hemos dado cuenta de que tu perfil no tiene configurado una forma de pago. Mientras ésto sea así no podemos pagarte ni podrás aceptar reservas.</value>
+  </data>
+	<data name="BOOKING_CREATED" xml:space="preserve">
+    <value>Reserva Creada</value>
+  </data>
+	<data name=" PROFESSIONAL_NOT_READY_FOR_PAYMENTS" xml:space="preserve">
+    <value>¡EL PARTNER NO HA CONFIGURADO LOS PAGOS!</value>
+  </data>
+	<data name="BOOKING_REJECTED" xml:space="preserve">
+    <value>Reserva Rechazada</value>
+  </data>
+	<data name="PRICE_PER_PERSON" xml:space="preserve">
+    <value>Precio por persona</value>
+  </data>
+	<data name="ADD_TO_CALENDAR" xml:space="preserve">
+    <value>Añadir al calendario</value>
+  </data>
+	<data name="BOOKING_CANCELLED_TITLE" xml:space="preserve">
+    <value>Reserva Cancellada</value>
+  </data>
+	<data name="BOOKING_ACCEPTED_PARTNERDESCRIPTION1" xml:space="preserve">
+    <value>La reserva ha sido aceptada y solo tenemos que recibir el pago...</value>
+  </data>
+	<data name="BOOKING_PAID" xml:space="preserve">
+    <value>Reserva Pagada</value>
+  </data>
+	<data name="AMMOUNT_TO_BE_REFUNDED" xml:space="preserve">
+    <value>Cantidad a reembolsar</value>
+  </data>
+	<data name="FULLY_REFUNDED" xml:space="preserve">
+    <value>REEMBOLSO COMPLETO</value>
+  </data>
+	<data name="PARTIALLY_REFUNDED" xml:space="preserve">
+    <value>REEMBOLSO PARCIAL</value>
+  </data>
+	<data name=" PROFESSIONAL_SHOULD_BE_PAID_OUTSIDE_OF_STRIPE" xml:space="preserve">
+    <value>Este partner no pertence a los países soportados por Stripe, por tanto se le debe pagar a través del proceso de pagos fuera de Stripe.</value>
+  </data>
+	<data name="CONVERSATION_STARTED" xml:space="preserve">
+    <value>Nueva Conversación</value>
+  </data>
+	<data name="USER_NAME" xml:space="preserve">
+    <value>Nombre de usuario</value>
+  </data>
+	<data name="CREATION_DATE" xml:space="preserve">
+    <value>Fecha de creación</value>
+  </data>
+	<data name="TFST_USER" xml:space="preserve">
+    <value>Es usuario de The Full Stack Team?</value>
+  </data>
+	<data name="IT_IS_TFST_USER" xml:space="preserve">
+    <value>SI, es un usuario de The Full Stack Team</value>
+  </data>
+	<data name="IT_IS_NOT_TFST_USER" xml:space="preserve">
+    <value>NO, parece que es un usuario nuevo...</value>
+  </data>
+	<data name="PENDING_VALIDATION" xml:space="preserve">
+    <value>Su perfil profesional está pendiente de aprobación por parte del equipo de The Full Stack Team.</value>
+  </data>
+	<data name="GO_TO_PROFILE" xml:space="preserve">
+    <value>Ir a mi perfil</value>
+  </data>
+	<data name="CREATE_PROFESSIONAL" xml:space="preserve">
+    <value>Crear perfil profesional</value>
+  </data>
+</root>

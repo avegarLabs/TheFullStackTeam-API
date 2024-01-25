@@ -1,0 +1,27 @@
+dotnet ef migrations add InitialMigration -c TheFullStackTeamDbContext --project ..\TheFullStackTeam.Persistence\ --output-dir ..\TheFullStackTeam.Persistence\Migrations
+dotnet ef database update --context TheFullStackTeamDbContext --project ..\TheFullStackTeam.Persistence\
+dotnet ef migrations remove --context TheFullStackTeamDbContext --project ..\TheFullStackTeam.Persistence\ --force
+
+---Para hacer la migración
+1._ Copiar el primer comando
+2._ Abrir Developer Power Shell
+	---Para abrir Developer Power Shell--
+	1._ Atajo de tecaldo Ctrl+Q
+	2._ Escribir Developer Power Shell y enter
+3._ Ubicarse en el proyecto api cd src/TheFulStackTeam.Api
+4._ Pegar el comando copiado en el paso 1.
+5._ Modificar en nombre de la migración <InitialMigration> cambiarlo por algo intuitivo (quitar los simpbolos <>)
+6._ Enter
+
+Si compila todo correcto y sin errores debería aparecer en la carpeta Migration (src\TheFullStackTeam.Persistence\Migrations) los ficheros referentes a la migración generada
+7._ Copiar el segundo comando (estoa actualiza la base de datos)
+8._ Enter
+9._ Verificar en la base de datos que se ha aplicado los cambios correspondientes.
+
+En caso que se quiera revertir al migración
+
+1._ Copiar el tercer comando.
+2._ Seguir los pasos del 2 al 4 de la sección ---Para hacer la migración.
+3._ Enter
+4._ Verificar en la base de datos que se hayan eliminado los cambios correpondientes.
+

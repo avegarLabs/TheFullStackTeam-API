@@ -1,0 +1,34 @@
+﻿@using TheFullStackTeam.Communications.EmailTemplates.Localization
+@using TheFullStackTeam.Communications.EmailTemplates.Constants
+@model TheFullStackTeam.Communications.EmailTemplates.ViewModels.ProfessionalCreatedNotificationViewModel
+@inject LocalizationService _templateLocalize
+
+@{
+    ViewBag.Title = _templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.WELCOME_TO_TFST);
+    Layout = "~/Views/Shared/_MailTemplateLayout.cshtml";
+}
+<div>
+    <h1>@_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.WELCOME_TO_TFST)</h1>
+
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.HI_THERE)
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.WELCOME_TO_TFST_P_1)
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.WELCOME_TO_TFST_P_2)
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.WELCOME_TO_TFST_P_3)
+    </p> 
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.WELCOME_TO_TFST_P_4)
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.CHEERS)
+    </p>
+    <p>
+        @_templateLocalize.GetLocalizedHtmlString(ProfessionalNotificationConstants.ADMIN_TFST)
+    </p>
+</div>

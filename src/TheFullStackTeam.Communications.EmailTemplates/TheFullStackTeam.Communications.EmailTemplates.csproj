@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="packages.lock.json" />
+    <None Remove="Views\NotificationToAdminPlainTextView.cshtml" />
+    <None Remove="Views\NotificationToAdminsTemplateView.cshtml" />
+    <None Remove="Views\ProfessionalCreatedAdminNotificationView.cshtml" />
+    <None Remove="Views\ProfessionalCreatedWelcomeNotificationView.cshtml" />
+    <None Remove="Views\Shared\_MailTemplateLayout.cshtml" />
+    <None Remove="Views\UserWelcomeNotificationView.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Views\NotificationToAdminPlainTextView.cshtml" />
+    <EmbeddedResource Include="Views\NotificationToAdminsTemplateView.cshtml" />
+    <EmbeddedResource Include="Views\ProfessionalCreatedAdminNotificationView.cshtml" />
+    <EmbeddedResource Include="Views\ProfessionalCreatedWelcomeNotificationView.cshtml" />
+    <EmbeddedResource Include="Views\Shared\_MailTemplateLayout.cshtml" />
+    <EmbeddedResource Include="Views\UserWelcomeNotificationView.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Localization" Version="7.0.3" />
+    <PackageReference Include="Microsoft.Graph" Version="4.54.0" />
+  </ItemGroup>
+
+</Project>
